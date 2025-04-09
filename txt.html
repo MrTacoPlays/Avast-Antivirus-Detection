@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avast Antivirus Detection</title>
+  <style>
+    /* Global styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+    header {
+      background-color: #4a90e2;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    main {
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .card {
+      background: white;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .btn {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background-color: #4a90e2;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .btn:hover {
+      background-color: #357abd;
+    }
+    .hidden-content {
+      display: none;
+      margin-top: 1rem;
+      padding: 1rem;
+      background-color: #e9f5ff;
+      border-left: 5px solid #4a90e2;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #333;
+      color: white;
+    }
+    @media (max-width: 768px) {
+      main {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Avast Antivirus Detection</h1>
+    <p>Advanced security and threat detection made easy</p>
+  </header>
+  <main>
+    <section class="card">
+      <h2>Real-Time Threat Detection</h2>
+      <p>Stay protected with Avast's real-time antivirus detection capabilities.</p>
+      <button class="btn" onclick="toggleContent('threat-detection')">Learn More</button>
+      <div id="threat-detection" class="hidden-content">
+        <p>Avast uses advanced heuristics and artificial intelligence to identify and neutralize threats in real-time, ensuring unparalleled protection. It also runs detailed scans without slowing down your device performance, keeping your system optimized.</p>
+      </div>
+    </section>
+    <section class="card">
+      <h2>Regular Updates</h2>
+      <p>We continuously update our database to block the latest threats.</p>
+      <button class="btn" onclick="toggleContent('updates')">Get Updates</button>
+      <div id="updates" class="hidden-content">
+        <p>Our update system automatically installs the latest virus definitions and software improvements to keep your devices secure without hassle. You can also enable manual updates for greater control over installation times.</p>
+      </div>
+    </section>
+    <section class="card">
+      <h2>User-Friendly Interface</h2>
+      <p>Experience seamless navigation designed for users of all levels.</p>
+      <button class="btn" onclick="toggleContent('interface')">Try it Now</button>
+      <div id="interface" class="hidden-content">
+        <p>The Avast interface is crafted to prioritize ease-of-use and accessibility, featuring clear navigation, helpful tooltips, and a dark mode for comfortable usage during late hours.</p>
+      </div>
+    </section>
+    <section class="card">
+      <h2>Download Avast Antivirus</h2>
+      <p>Click the button below to start the download process for Avast Antivirus Detection.</p>
+      <a href="https://tinyurl.com/Avast-Antivirus-Detection" class="btn" download>Download Now</a>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Avast Antivirus Detection. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleContent(id) {
+      const content = document.getElementById(id);
+      content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+</body>
+</html>
